@@ -7,10 +7,13 @@ class Rinex < Formula
   depends_on "rust" => :build
 
   def install
-    system "cargo", "install", "--locked", "--root", prefix, "--path", "crx2rnx"
-    system "cargo", "install", "--locked", "--root", prefix, "--path", "rinex-cli"
-    system "cargo", "install", "--locked", "--root", prefix, "--path", "rnx2crx"
-    system "cargo", "install", "--locked", "--root", prefix, "--path", "ublox-rnx"
+    system "cargo", "build", "--release", "--features", "full"
+
+    # Install only specific binaries
+    bin.install "target/release/crx2rnx"
+    bin.install "target/release/rinex-cli"
+    bin.install "target/release/rnx2crx"
+    bin.install "target/release/ublox-rnx"
   end
 
   test do
