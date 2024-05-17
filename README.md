@@ -1,10 +1,10 @@
-# Daz Rinex
+# Daz's Homebrew Tap
 
 ## How do I install these formulae?
 
-`brew install daz/rinex/<formula>`
+`brew install daz/homebrew-tap/<formula>`
 
-Or `brew tap daz/rinex` and then `brew install <formula>`.
+Or `brew tap daz/homebrew-tap` and then `brew install <formula>`.
 
 ## Documentation
 
