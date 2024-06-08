@@ -1,8 +1,9 @@
 class Rtklib < Formula
   desc "A version of RTKLIB optimized for single and dual frequency low cost GPS receivers, especially u-blox receivers.  It is based on RTKLIB 2.4.3 and is kept reasonably closely synced to that branch.  Documentation for RTKLIB is available at rtklib.com.   This software is provided “AS IS” without any warranties of any kind so please be careful, especially if using it in any kind of real-time application.  Binaries and tutorials for this code, and sample GPS data sets at :                "
   homepage "http://rtkexplorer.com/"
-  url "https://github.com/daz/RTKLIB.git", :branch => "demo5"
-  version "b34i"
+  url "https://github.com/rtklibexplorer/RTKLIB/archive/refs/tags/b34j.tar.gz"
+  sha256 "7b9ed617733e1d07b9f61b4f3fe7e6d08a2b8b801ed061ae94de718dc69580fe"
+  version "b34j"
   license "BSD-2-Clause"
 
   depends_on "gcc" => :build
